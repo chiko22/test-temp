@@ -1,0 +1,122 @@
+.header {
+  padding: 30px 0 0;
+  background: linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
+  color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 445px) {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    @media screen and (max-width: 445px) {
+      margin-bottom: 30px;
+    }
+  }
+  .menu {
+    margin-bottom: 5px;
+    margin-right: 25px;
+    @media screen and (max-width: 445px) {
+      margin: 0;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__list-item + .menu__list-item {
+      margin-left: 99px;
+      @media screen and (max-width: 575px) {
+        margin-left: 40px;
+      }
+    }
+
+    &__list-link {
+      color: #fff;
+      font-weight: 300;
+      transition: all 0.3s;
+      &:hover,
+      &:active {
+        color: #f25b24;
+      }
+    }
+
+    &__list-item + .menu__list-item > .menu__list-link::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('../img/loginIcon.svg') no-repeat;
+      position: absolute;
+      top: -2px;
+      left: 0;
+      transition: all 0.3s;
+    }
+    &__list-item + .menu__list-item > .menu__list-link {
+      padding-left: 36px;
+      position: relative;
+      &:hover::before,
+      &:active::before {
+        background: url('../img/loginIcon-orange.svg') no-repeat;
+      }
+    }
+  }
+  &__promo {
+    padding: 130px 0 180px;
+    background-image: url(../img/headerBG.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 101% 45%;
+    @media screen and (max-width: 1199px) {
+      background-size: 50%;
+    }
+    @media screen and (max-width: 991px) {
+      padding-top: 400px;
+      padding-bottom: 50px;
+      background-position: 50% 10%;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 300px;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 250px;
+    }
+    @media screen and (max-width: 445px) {
+      padding-top: 200px;
+    }
+  }
+  &__title {
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 60px;
+    max-width: 550px;
+    @media screen and (max-width: 991px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+  &__subtitle {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    max-width: 500px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 991px) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+  &__btn {
+    @media screen and (max-width: 991px) {
+      display: block;
+      margin: 0 auto;;
+    }
+  }
+}

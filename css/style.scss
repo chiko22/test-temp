@@ -1,0 +1,58 @@
+@import 'scss/libs/fonts';
+@import "scss/libs/myAnimation";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Whitney', sans-serif;
+  font-weight: 400;
+  color: #474351;
+  font-size: 16px;
+  line-height: 23px;
+  background-color: #fff;
+  position: relative;
+}
+button {
+  font-family: 'Whitney', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  background: #f25b24;
+  border-radius: 4px;
+  padding: 16px 60px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  &:hover {
+    color: #4e33b5;
+  }
+  @media screen and (max-width: 575px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@import 'scss/blocks/header';
+@import 'scss/blocks/possibilities';
+@import 'scss/blocks/checkin';
+@import 'scss/blocks/modal';

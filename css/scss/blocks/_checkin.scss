@@ -1,0 +1,32 @@
+.checkin {
+  padding-bottom: 185px;
+  &__inner {
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 70px;
+    background: url('../img/checkinBg.png') no-repeat right center,
+      linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
+    background-size: auto, 100%;
+    @media screen and (max-width: 768px) {
+      padding: 50px;
+      background-size: 90%, 100%;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 30px;
+      background-size: 90%, 100%;
+    }
+  }
+  &__title {
+    max-width: 550px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #fff;
+    margin-bottom: 46px;
+    @media screen and (max-width: 445px) {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 100%;
+    }
+  }
+}
